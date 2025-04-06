@@ -19,6 +19,7 @@
     background-color: #121212;
 }
 
+
 .invert{
     filter: invert(1);
 }
@@ -33,4 +34,12 @@
 
 .p-1{
     padding: 10px;
+}
+
+.weight700{
+    font-weight:700 ;
+}
+
+.weight400{
+    font-weight:400 ;
 }

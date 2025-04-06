@@ -56,7 +56,7 @@ body{
     display: flex;
     font-size: 10px;
     gap:10px;
-
+    padding: 10px 0;
 }
 
 .footer a{
@@ -66,14 +66,94 @@ body{
 
 .header{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background-color: rgb(34, 34, 34);
 }
 
 .header > *{
-    padding: 20px;
+    padding: 15px;
+}
+
+.buttons{
+    display: flex;
+    gap: 15px;
+}
+
+.buttons .signUp{
+    background-color: transparent;
+    border: none;
+    color: #FCFCFC;
+}
+
+.buttons .login{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .spotifyPlaylists{
     padding: 10px;
+}
+
+.cardContainer{
+    gap: 20px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 136px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #252525;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.card .musicDescription > *{
+    padding-top: 4px;
+}
+
+.card .musicDescription > p{
+    font-size: 14px;
+    color: grey;
+}
+
+.play{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: #1fdf64;
+    position: absolute;
+    margin: 4px;
+    top: 125px;
+    right: 16px;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+.card:hover .play{
+    cursor: pointer;
+    top: 98px;
+    opacity: 1;
+}
+
+
+.play img{
+    position: absolute;
+    width: 20px;
+    bottom: 6px;
+    left: 11px;
 }
