@@ -20,6 +20,7 @@ body{
 
 .right{
     width: 75vw; 
+    margin: 15px 0;
 }
 
 .home ul li{
@@ -61,4 +62,18 @@ body{
 .footer a{
     color: grey;
     text-decoration: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+}
+
+.header > *{
+    padding: 20px;
+}
+
+.spotifyPlaylists{
+    padding: 10px;
 }
