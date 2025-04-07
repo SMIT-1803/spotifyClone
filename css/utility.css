@@ -43,3 +43,33 @@
 .weight400{
     font-weight:400 ;
 }
+
+/* Dark themed scrollbar styles */
+
+/* WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #2e2e2e; /* Dark track background */
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #555; /* Thumb color */
+    border-radius: 10px;
+    border: 3px solid #2e2e2e; /* Creates a padding effect */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #666; /* Slightly lighter on hover */
+  }
+  
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #555 #2e2e2e; /* thumb and track colors respectively */
+  }
+  
