@@ -19,6 +19,7 @@ async function getSongs(){
 const playMusic = (music)=>{
   currentSong.src = "/songs/"+ music;
   currentSong.play();
+  play.src = "img/pause.svg";
 }
 async function main(){
     let songs = await getSongs();
@@ -41,6 +42,18 @@ async function main(){
       e.addEventListener("click",element=>{
         playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim())
       })
+    })
+
+
+    play.addEventListener("click",()=>{
+      if(currentSong.paused){
+        currentSong.play();
+        play.src = "img/pause.svg";
+      }
+      else{
+        currentSong.pause();
+        play.src = "img/play.svg";
+      }
     })
   
    
