@@ -1,7 +1,9 @@
 let currentSong = new Audio();
 
 function secToMin(sec) {
-  // Calculate the minutes and seconds
+  if (isNaN(sec) || sec < 0) {
+    return "00:00"; // Return a default value for invalid input
+  }
   const min = parseInt(Math.floor(sec / 60));
   const remainingSec = parseInt(sec % 60);
   
@@ -93,6 +95,37 @@ async function main(){
 
     document.querySelector(".close").addEventListener("click",()=>{
       document.querySelector(".left").style.left="-120%";
+    })
+
+
+    previous.addEventListener("click",()=>{
+      console.log(currentSong);
+      console.log(songs);
+      console.log(songs.indexOf(currentSong.src.split("/songs/")[1]));
+      let index = songs.indexOf(currentSong.src.split("/songs/")[1]);
+      if(index-1<0){
+        let indexToPlay = songs.length-1;
+        playMusic(songs[indexToPlay]);
+      }
+      else{
+        let indexToPlay = index-1;
+        playMusic(songs[indexToPlay]);
+      }
+    })
+
+    next.addEventListener("click",()=>{
+      console.log(currentSong);
+      console.log(songs);
+      console.log(songs.indexOf(currentSong.src.split("/songs/")[1]));
+      let index = songs.indexOf(currentSong.src.split("/songs/")[1]);
+      if(index+1>=songs.length){
+        let indexToPlay = 0;
+        playMusic(songs[indexToPlay]);
+      }
+      else{
+        let indexToPlay = index+1;
+        playMusic(songs[indexToPlay]);
+      }
     })
 }
 
