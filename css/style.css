@@ -234,11 +234,12 @@ body{
 .seekBar{
     position: absolute;
     bottom: 0;
-    height: 2px;
+    height: 4px;
     width: 98%;
     background:black ;
     border-radius: 10px;
     margin:6px;
+    cursor: pointer;
 }
 
 .circle{
@@ -254,4 +255,14 @@ body{
 
 .songBtns img{
     cursor: pointer;
+}
+
+.songInfo, .songTime{
+    color: black
+}
+
+.songDisplayer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
