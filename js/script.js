@@ -75,8 +75,8 @@ async function main(){
     })
 
     currentSong.addEventListener("timeupdate",()=>{  
-      document.querySelector(".songTime").innerHTML = `${secToMin(currentSong.currentTime)} / ${secToMin(currentSong.duration)}`
-      document.querySelector(".circle").style.left = 100*(currentSong.currentTime / currentSong.duration)+"%";
+      document.querySelector(".songTime").innerHTML = `${secToMin(currentSong.currentTime)}  /  ${secToMin(currentSong.duration)}`
+      document.querySelector(".circle").style.left = 100*(currentSong.currentTime  /  currentSong.duration)+"%";
     }) 
 
     document.querySelector(".seekBar").addEventListener("click",e=>{
@@ -84,6 +84,15 @@ async function main(){
       document.querySelector(".circle").style.left = percent+"%";
       currentSong.currentTime = ((currentSong.duration)*percent)/100
 
+    })
+
+
+    document.querySelector(".hamburger").addEventListener("click",()=>{
+      document.querySelector(".left").style.left="0";
+    })
+
+    document.querySelector(".close").addEventListener("click",()=>{
+      document.querySelector(".left").style.left="-120%";
     })
 }
 
