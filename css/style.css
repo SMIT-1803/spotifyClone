@@ -263,8 +263,18 @@ body{
     cursor: pointer;
 }
 
+.songInfo{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
 .songInfo, .songTime{
     color: black
+}
+
+.info div{
+    word-break: break-all;
 }
 
 .close{
@@ -275,6 +285,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .hamburgerContainer{
