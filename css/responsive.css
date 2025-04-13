@@ -1,0 +1,66 @@
+@media (max-width:1500px){
+    .left{
+        background-color: black;
+        position:absolute;
+        left:-120%;
+        transition: all .3s;
+        z-index: 1;
+        width: 370px;
+    }
+
+    .left .close{
+        position: absolute;
+        display: block;
+        top: 25px;
+        right: 30px;
+        width: 35px;
+    }
+
+    .left .close img{
+        width: 35px;
+    }
+
+    .right{
+        width: 100vw;
+        margin: 0;
+    }
+
+    .playbar{
+        width: calc(100vw - 50px);
+    }
+
+    .seekBar{
+        width: calc(100vw - 50px);
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+}
+
+@media (max-width:600px){
+    .card{
+        width: 90vw;
+    }
+        
+    .cardContainer{
+        justify-content: center;
+    }
+
+    .songDisplayer{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .spotifyPlaylists h2{
+        padding: 0 4px;
+    }
+}
+
+@media (max-width:480px){
+    .card{
+        width: 86vw;
+    }
+}
