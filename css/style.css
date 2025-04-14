@@ -196,7 +196,7 @@ body{
     position: fixed;
     bottom: 22px;
     filter: invert(1);
-    background: rgb(241 209 209);
+    background: rgb(238 238 238);
     border-radius: 10px;
     width:70vw;
     padding: 12px;
@@ -275,9 +275,10 @@ body{
 }
 
 .songInfo{
-    width: 250px;
+    width: 300px;
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
+
 }
 
 .songInfo{
