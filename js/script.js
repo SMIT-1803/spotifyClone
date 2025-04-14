@@ -43,7 +43,7 @@ async function getSongs(folder){
               <img class="invert" src="img/music.svg" alt="music" />
               <div class="info">
                 <div>${song.replaceAll("%20"," ").slice(0,-4)}</div>
-                <div>${artist}</div>
+                <div>Singer: ${artist.replaceAll("%20"," ")}</div>
               </div>
               <div class="playnow">
                 <img class="invert" src="img/play.svg" alt="" />
