@@ -68,10 +68,29 @@
     .spotifyPlaylists h2{
         padding: 0 4px;
     }
+
+    .play{
+        right:4vw;
+    }
+
+    .card:hover .play{
+        cursor: pointer;
+        bottom: 16vh;
+        right: 4vw;
+        opacity: 1;
+    }
+    
 }
 
 @media (max-width:480px){
     .card{
         width: 86vw;
+    }
+
+    .card:hover .play{
+        cursor: pointer;
+        bottom: 12vh;
+        right: 4vw;
+        opacity: 1;
     }
 }

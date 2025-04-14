@@ -133,7 +133,7 @@ body{
 
 .card{
     width: 136px;
-    padding: 15px;
+    padding: 12px;
     border-radius: 5px;
     
     position: relative;
@@ -171,15 +171,16 @@ body{
     background-color: #1fdf64;
     position: absolute;
     margin: 4px;
-    top: 125px;
-    right: 16px;
+    bottom: 5vh;
+    right: 1vw;
     opacity: 0;
-    transition: all 0.5s ease-in;
+    transition: all 0.3s ease-in;
+    position: absolute;
 }
 
 .card:hover .play{
     cursor: pointer;
-    top: 98px;
+    bottom: 10vh;
     opacity: 1;
 }
 
@@ -226,7 +227,7 @@ body{
 .songList ul li{
     display: flex;
     list-style-type: decimal;
-    font-size: 13px;
+    font-size: 12px;
     gap: 10px;
     cursor: pointer;
     padding: 12px 0;
@@ -241,6 +242,10 @@ body{
     justify-content: center;
     align-items: center;
     gap: 12px;
+}
+
+.playnow img{
+    margin-right: 5px;
 }
 
 .seekBar{
@@ -325,6 +330,10 @@ body{
 
 .range{
     display: none;
+}
+
+.range input{
+    cursor: pointer;
 }
 
 .volume:hover .range{
