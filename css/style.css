@@ -135,8 +135,14 @@ body{
     width: 136px;
     padding: 15px;
     border-radius: 5px;
-    background-color: #252525;
+    
     position: relative;
+    transition: all 0.5s ease-in;
+}
+
+.card:hover{
+    background-color: #1F1F1F;
+    cursor: pointer;
 }
 
 .card img{
@@ -269,8 +275,13 @@ body{
     justify-content: center;
 }
 
-.songInfo, .songTime{
+.songInfo{
     color: black
+}
+
+.songTime{
+    color: black;
+    width: 125px;
 }
 
 .info div{
@@ -297,4 +308,26 @@ body{
 .hamburger{
     display: none;
     width: 60px;
+}
+
+
+.timeAndVolume{
+    align-items: center;
+    justify-content: center;
+}
+
+.volume{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.range{
+    display: none;
+}
+
+.volume:hover .range{
+    display: block;
+    cursor: pointer;
 }

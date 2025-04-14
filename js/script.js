@@ -127,6 +127,12 @@ async function main(){
         playMusic(songs[indexToPlay]);
       }
     })
+
+
+    document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("input",e=>{
+      let percent = e.target.value/100;
+      currentSong.volume = percent;
+    })
 }
 
 main();

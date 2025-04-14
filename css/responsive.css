@@ -40,6 +40,16 @@
 
 }
 
+@media (max-width:800px){
+    .songDisplayer{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+
+
 @media (max-width:600px){
     .card{
         width: 90vw;
