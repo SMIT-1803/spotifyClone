@@ -42,7 +42,7 @@ async function getSongs(folder){
           `<li>
               <img class="invert" src="img/music.svg" alt="music" />
               <div class="info">
-                <div>${song.replaceAll("%20"," ")}</div>
+                <div>${song.replaceAll("%20"," ").slice(0,-4)}</div>
                 <div>${artist}</div>
               </div>
               <div class="playnow">
@@ -53,7 +53,7 @@ async function getSongs(folder){
 
     Array.from(document.querySelector(".songList").getElementsByTagName("li")).forEach(e=>{
       e.addEventListener("click",element=>{
-        playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim())
+        playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim()+".mp3")
       })
     })
     return songs; 
@@ -65,7 +65,7 @@ const playMusic = (music, pause=false)=>{
     currentSong.play();
     play.src = "img/pause.svg";
   }
-  document.querySelector(".songInfo").innerHTML = decodeURI(music);
+  document.querySelector(".songInfo").innerHTML = decodeURI(music).slice(0,-4);
   document.querySelector(".songTime").innerHTML = "00:00 / 00:00";
 }
 
