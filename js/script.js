@@ -20,7 +20,7 @@ function secToMin(sec) {
 async function getSongs(folder){
   currentFolder = folder;
   let artist = currentFolder.split("/")[1].replaceAll("_"," ");
-    let fetcher = await fetch(`http://127.0.0.1:3000/${folder}/allSongs`);
+    let fetcher = await fetch(`${folder}/allSongs`);
     let response  = await fetcher.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -60,7 +60,7 @@ async function getSongs(folder){
 }
 
 const playMusic = (music, pause=false)=>{
-  currentSong.src = `/${currentFolder}/allSongs/`+ music;
+  currentSong.src = `${currentFolder}/allSongs/`+ music;
   if(!pause){
     currentSong.play();
     play.src = "img/pause.svg";
@@ -70,7 +70,7 @@ const playMusic = (music, pause=false)=>{
 }
 
 async function displayAlbums(){
-    let fetcher = await fetch(`/songs/`);
+    let fetcher = await fetch(`songs/`);
     let response  = await fetcher.text();
     let folder;
     let div = document.createElement("div");
@@ -82,7 +82,7 @@ async function displayAlbums(){
       const e = array[index];
     if(e.href.includes("/songs")){
       folder = e.href.split("/").slice(-2)[0];
-      let a = await fetch(`/songs/${folder}/info.json`);
+      let a = await fetch(`songs/${folder}/info.json`);
       let response = await a.json();
       cardContainer.innerHTML+=`
       <div data-folder="${folder}" class="card weight400">
