@@ -3,25 +3,20 @@
         "title": "Arijit Singh",
         "artist": "Artist 1",
         "album": "Album 1",
-        "description": "Hits of Arijit Singh",
-        "songs": ["Ae Zindagi Gale Laga Le, Dear Zindagi.mp3", "Agar Tum Saath Ho Tamasha.mp3", 
-        "Chaleya, Jawan.mp3", "Channa Mereya, Ae Dil Hai Mushkil.mp3"]  
-        
+        "description": "Hits of Arijit Singh"
     },
 
     {
-        "title": "Armaaan Malik",
-        "artist": "Armaaan Malik",
+        "title": "Arman Malik",
+        "artist": "Arman Malik",
         "album": "Album 2",
-        "description":"Hits of Armaaan Malik",
-        "songs": ["Besabriyaan M.s. Dhoni The Untold Story.mp3","Bol Do Na Zara, Azhar.mp3","Hum Nahi Sudhrenge, Golmaal Again.mp3"]
-        
+        "description":"Hits of Arman Malik"
     },
-    
-    {"title": "Diljit Dosanjh",
+
+    {
+        "title": "Diljit Dosanjh",
         "artist": "Diljit Dosanjh",
         "album": "Album 3",
-        "description":"Hits of Diljit Dosanjh",
-        "songs": ["Do you know.mp3" , "Laembadgini.mp3", "Patiala Peg.mp3"]
+        "description":"Hits of Diljit Dosanjh"
     }
 ]
