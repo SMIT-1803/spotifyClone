@@ -194,7 +194,7 @@ body{
 
 .playbar{
     position: fixed;
-    bottom: 22px;
+    bottom: 10px;
     filter: invert(1);
     background: rgb(238 238 238);
     border-radius: 10px;
