@@ -37,6 +37,28 @@
     .hamburger{
         display: block;
     }
+    .card .play{
+        right: 1vw;
+    }
+
+    .card:hover .play{
+        bottom:11vmin;
+        right: 1vw;
+    }
+
+
+}
+
+@media (max-width:900px) {
+    .cardContainer{
+        justify-content: center;
+    }
+    .play{
+        right: 1vw;
+    }
+    .card:hover .play{
+        right: 1vw;
+    }
 
 }
 
@@ -46,6 +68,8 @@
         gap: 10px;
         align-items: center;
     }
+
+
 }
 
 
@@ -85,6 +109,10 @@
 @media (max-width:480px){
     .card{
         width: 86vw;
+    }
+
+    .play{
+        right:4vw;
     }
 
     .card:hover .play{

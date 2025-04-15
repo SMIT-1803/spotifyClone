@@ -124,7 +124,7 @@ body{
 
 .cardContainer{
     gap: 15px;
-    margin-top: 16px;
+    margin-top: 3px;
     flex-wrap: wrap;
     max-height: 70vh;
     overflow-y: auto;
@@ -171,8 +171,8 @@ body{
     background-color: #1fdf64;
     position: absolute;
     margin: 4px;
-    bottom: 5vh;
-    right: 1vw;
+    bottom: 5vmin;
+    right: 0.5vw;
     opacity: 0;
     transition: all 0.3s ease-in;
     position: absolute;
@@ -180,7 +180,7 @@ body{
 
 .card:hover .play{
     cursor: pointer;
-    bottom: 10vh;
+    bottom: 8vmin;
     opacity: 1;
 }
 
