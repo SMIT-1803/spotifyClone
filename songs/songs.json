@@ -1,73 +1,63 @@
 [
     {
-        "title": "Arijit Singh",
-        "artist": "Artist 1",
-        "album": "Album 1",
-        "description": "Hits of Arijit Singh"
+      "title": "Arijit Singh",
+      "artist": "Artist 1",
+      "album": "Album 1",
+      "description": "Soulful favorites from Arijit Singh"
     },
-
     {
-        "title": "Arman Malik",
-        "artist": "Arman Malik",
-        "album": "Album 2",
-        "description":"Hits of Arman Malik"
+      "title": "Arman Malik",
+      "artist": "Arman Malik",
+      "album": "Album 2",
+      "description": "Romantic pop by Arman Malik"
     },
-
     {
-        "title": "Diljit Dosanjh",
-        "artist": "Diljit Dosanjh",
-        "album": "Album 3",
-        "description":"Hits of Diljit Dosanjh"
+      "title": "Diljit Dosanjh",
+      "artist": "Diljit Dosanjh",
+      "album": "Album 3",
+      "description": "High-energy Punjabi tracks from Diljit"
     },
-
     {
-        "title": "Eminem",
-        "artist": "Eminem",
-        "album": "Album 4",
-        "description":"Hits of Eminem"
+      "title": "Eminem",
+      "artist": "Eminem",
+      "album": "Album 4",
+      "description": "Hard-hitting rap anthems by Eminem"
     },
-
     {
-        "title": "Karan Aujla",
-        "artist": "Karan Aujla",
-        "album": "Album 5",
-        "description":"Hits of Karan Aujla"
+      "title": "Karan Aujla",
+      "artist": "Karan Aujla",
+      "album": "Album 5",
+      "description": "Bold Punjabi beats from Karan Aujla"
     },
-
     {
-        "title": "Kishor Kumar",
-        "artist": "Kishor Kumar",
-        "album": "Album 6",
-        "description":"Hits of Kishor Kumar"
+      "title": "Kishor Kumar",
+      "artist": "Kishor Kumar",
+      "album": "Album 6",
+      "description": "Timeless classics of Kishor Kumar"
     },
-
     {
-        "title": "KK",
-        "artist": "KK",
-        "album": "Album 7",
-        "description":"Hits of KK"
+      "title": "KK",
+      "artist": "KK",
+      "album": "Album 7",
+      "description": "Iconic ballads from KK"
     },
-
     {
-        "title": "Shaan",
-        "artist": "Shaan",
-        "album": "Album 8",
-        "description":"Hits of Shaan"
+      "title": "Shaan",
+      "artist": "Shaan",
+      "album": "Album 8",
+      "description": "Feel-good melodies by Shaan"
     },
-
     {
-        "title": "Shreya Ghoshal",
-        "artist": "Shreya Ghoshal",
-        "album": "Album 9",
-        "description":"Hits of Shreya Ghoshal"
+      "title": "Shreya Ghoshal",
+      "artist": "Shreya Ghoshal",
+      "album": "Album 9",
+      "description": "Graceful vocals by Shreya Ghoshal"
     },
-
     {
-        "title": "Sonu Nigam",
-        "artist": "Sonu Nigam",
-        "album": "Album 10",
-        "description":"Hits of Sonu Nigam"
+      "title": "Sonu Nigam",
+      "artist": "Sonu Nigam",
+      "album": "Album 10",
+      "description": "Unforgettable tunes of Sonu Nigam"
     }
-
-
-]
+  ]
+  
