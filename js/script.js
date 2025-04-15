@@ -1,6 +1,7 @@
 let currentSong = new Audio();
 let currentFolder;
 let songs;
+console.log("Hello World");
 
 function secToMin(sec) {
   if (isNaN(sec) || sec < 0) {
@@ -17,46 +18,39 @@ function secToMin(sec) {
 }
 
 
-async function getSongs(folder){
+async function getSongs(folder) {
   currentFolder = folder;
-  let artist = currentFolder.split("/")[1].replaceAll("_"," ");
-    let fetcher = await fetch(`${folder}/allSongs`);
-    let response  = await fetcher.text();
-    let div = document.createElement("div");
-    div.innerHTML = response;
-    let as = div.getElementsByTagName("a");
-    songs = [];
-    for (let index = 0; index<as.length; index++) {
-        const element =as[index];
-        if(element.href.endsWith(".mp3")){
-          console.log(element.href.split(`/allSongs/`)[1]);
-            songs.push(element.href.split(`/allSongs/`)[1]);
-        }
-    }
+  let artist = currentFolder.split("/")[1].replaceAll("_", " ");
+  // Fetch the manifest JSON instead of relying on a directory listing
+  let fetcher = await fetch(`${folder}/allSongs/allSongs.json`);
+  let songsList = await fetcher.json();
+  songs = songsList;
 
-    let songUL = document.querySelector(".songList").getElementsByTagName("ul")[0];
-    songUL.innerHTML = "";
-    for (const song of songs) {
-      
-        songUL.innerHTML+= 
-          `<li>
-              <img class="invert" src="img/music.svg" alt="music" />
-              <div class="info">
-                <div>${song.replaceAll("%20"," ").slice(0,-4)}</div>
-                <div>Singer: ${artist.replaceAll("%20"," ")}</div>
-              </div>
-              <div class="playnow">
-                <img class="invert" src="img/play.svg" alt="" />
-              </div>
-            </li>`;
-    }
+  // Build the song list in the DOM
+  let songUL = document.querySelector(".songList").getElementsByTagName("ul")[0];
+  songUL.innerHTML = "";
+  for (const song of songs) {
+    songUL.innerHTML += `
+      <li>
+        <img class="invert" src="img/music.svg" alt="music" />
+        <div class="info">
+          <div>${song.replaceAll("%20", " ").slice(0, -4)}</div>
+          <div>Singer: ${artist.replaceAll("%20", " ")}</div>
+        </div>
+        <div class="playnow">
+          <img class="invert" src="img/play.svg" alt="" />
+        </div>
+      </li>`;
+  }
 
-    Array.from(document.querySelector(".songList").getElementsByTagName("li")).forEach(e=>{
-      e.addEventListener("click",element=>{
-        playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim()+".mp3")
-      })
-    })
-    return songs; 
+  Array.from(document.querySelector(".songList").getElementsByTagName("li")).forEach(e => {
+    e.addEventListener("click", () => {
+      // Append .mp3 if needed
+      e.querySelector(".info").firstElementChild.innerHTML.trim()
+      playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim()+".mp3");
+    });
+  });
+  return songs;
 }
 
 const playMusic = (music, pause=false)=>{
