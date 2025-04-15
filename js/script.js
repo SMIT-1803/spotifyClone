@@ -164,6 +164,9 @@ async function main(){
 
 
     document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("input",e=>{
+      if(document.querySelector(".volume>img").src.includes("mute.svg")){
+        document.querySelector(".volume>img").src= document.querySelector(".volume>img").src.replace("mute.svg","volume.svg");
+      }
       let percent = e.target.value/100;
       currentSong.volume = percent;
     })
