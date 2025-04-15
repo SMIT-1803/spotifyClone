@@ -1,0 +1,73 @@
+[
+    {
+        "title": "Arijit Singh",
+        "artist": "Artist 1",
+        "album": "Album 1",
+        "description": "Hits of Arijit Singh"
+    },
+
+    {
+        "title": "Arman Malik",
+        "artist": "Arman Malik",
+        "album": "Album 2",
+        "description":"Hits of Arman Malik"
+    },
+
+    {
+        "title": "Diljit Dosanjh",
+        "artist": "Diljit Dosanjh",
+        "album": "Album 3",
+        "description":"Hits of Diljit Dosanjh"
+    },
+
+    {
+        "title": "Eminem",
+        "artist": "Eminem",
+        "album": "Album 4",
+        "description":"Hits of Eminem"
+    },
+
+    {
+        "title": "Karan Aujla",
+        "artist": "Karan Aujla",
+        "album": "Album 5",
+        "description":"Hits of Karan Aujla"
+    },
+
+    {
+        "title": "Kishor Kumar",
+        "artist": "Kishor Kumar",
+        "album": "Album 6",
+        "description":"Hits of Kishor Kumar"
+    },
+
+    {
+        "title": "KK",
+        "artist": "KK",
+        "album": "Album 7",
+        "description":"Hits of KK"
+    },
+
+    {
+        "title": "Shaan",
+        "artist": "Shaan",
+        "album": "Album 8",
+        "description":"Hits of Shaan"
+    },
+
+    {
+        "title": "Shreya Ghoshal",
+        "artist": "Shreya Ghoshal",
+        "album": "Album 9",
+        "description":"Hits of Shreya Ghoshal"
+    },
+
+    {
+        "title": "Sonu Nigam",
+        "artist": "Sonu Nigam",
+        "album": "Album 10",
+        "description":"Hits of Sonu Nigam"
+    }
+
+
+]
